@@ -1,0 +1,105 @@
+:root {
+  /* Brand Color Tokens */
+  --color-navy-900: #0C1A45;
+  --color-navy-800: #142653;
+  --color-navy-700: #1F3670;
+  --color-navy-50: #EEF2FA;
+  
+  --color-teal-700: #0B6A56;
+  --color-teal-800: #07513F;
+  --color-teal-600: #0E836B;
+  --color-teal-50: #EBF7F4;
+  
+  --color-gold-600: #C99712;
+  --color-gold-700: #A87800;
+  --color-gold-500: #DEAB1E;
+  --color-gold-50: #FEF9E8;
+  
+  --color-ink-900: #151515;
+  --color-ink-800: #2B2B2B;
+  --color-ink-700: #4B4B4B;
+  --color-muted-600: #667085;
+  --color-muted-400: #98A2B3;
+  
+  --color-canvas: #F7F6F2;
+  --color-surface: #FFFFFF;
+  --color-surface-subtle: #FAF9F6;
+  --color-border: #E6E8EC;
+  --color-border-strong: #CDD2DA;
+  
+  --color-error: #B42318;
+  --color-error-bg: #FEF3F2;
+  --color-success: #13795B;
+  --color-success-bg: #EDFDF7;
+
+  /* Typography */
+  --font-family-base: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  
+  /* Font Sizes & Line Heights */
+  --font-display-size: 56px;
+  --font-display-line: 64px;
+  --font-h1-size: 40px;
+  --font-h1-line: 48px;
+  --font-h2-size: 32px;
+  --font-h2-line: 40px;
+  --font-h3-size: 24px;
+  --font-h3-line: 32px;
+  --font-h4-size: 20px;
+  --font-h4-line: 28px;
+  --font-h5-size: 16px;
+  --font-h5-line: 24px;
+  
+  --font-body-large-size: 18px;
+  --font-body-large-line: 28px;
+  --font-body-size: 16px;
+  --font-body-line: 24px;
+  --font-small-size: 14px;
+  --font-small-line: 20px;
+  --font-caption-size: 12px;
+  --font-caption-line: 16px;
+
+  /* Spacing Scale (8px system) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  --space-30: 120px;
+
+  /* Radii Scale */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-pill: 999px;
+
+  /* Elevation / Shadows */
+  --shadow-1: 0 1px 2px rgba(16, 24, 40, 0.06);
+  --shadow-2: 0 4px 12px rgba(16, 24, 40, 0.08);
+  --shadow-3: 0 12px 24px rgba(16, 24, 40, 0.10);
+  --shadow-card: 0 2px 12px rgba(16, 24, 40, 0.06);
+
+  /* Layout */
+  --container-max: 1280px;
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 220ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (max-width: 767px) {
+  :root {
+    --font-display-size: 36px;
+    --font-display-line: 42px;
+    --font-h1-size: 30px;
+    --font-h1-line: 38px;
+    --font-h2-size: 26px;
+    --font-h2-line: 34px;
+  }
+}
