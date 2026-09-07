@@ -358,70 +358,49 @@
         <div class="form-grid">
           <div class="form-group">
             <label class="form-label" for="inq_name">Full Name *</label>
-            <input type="text" id="inq_name" class="form-control" placeholder="Enter your full name" required />
+            <input type="text" id="inq_name" name="name" class="form-control" placeholder="Enter your full name" required />
             <span class="form-error">Please enter your full name.</span>
           </div>
 
           <div class="form-group">
             <label class="form-label" for="inq_phone">Mobile Number *</label>
-            <input type="tel" id="inq_phone" class="form-control" placeholder="+91 99988 06666" required />
+            <input type="tel" id="inq_phone" name="phone" class="form-control" placeholder="+91 99988 06666" required />
             <span class="form-error">Please enter a valid phone number.</span>
           </div>
 
           <div class="form-group">
             <label class="form-label" for="inq_email">Email Address *</label>
-            <input type="email" id="inq_email" class="form-control" placeholder="yourname@gmail.com" required />
+            <input type="email" id="inq_email" name="email" class="form-control" placeholder="yourname@gmail.com" required />
             <span class="form-error">Please enter a valid email address.</span>
           </div>
 
           <div class="form-group">
-            <label class="form-label" for="inq_visa">Service / Visa Type</label>
-            <select id="inq_visa" class="form-control">
-              <option value="student_visa">Student Visa Guidance</option>
-              <option value="immigration_visa">Immigration &amp; PR Visa</option>
-              <option value="visitor_visa">Visitor / Tourist Visa</option>
-              <option value="ielts_coaching">IELTS Coaching (Academic/General)</option>
-              <option value="toefl_coaching">TOEFL iBT Coaching</option>
-              <option value="spoken_english">Spoken English Fluency</option>
-              <option value="german_classes">German Language (A1-B2)</option>
-              <option value="french_classes">French Language (A1-B2)</option>
+            <label class="form-label" for="inq_coaching">Coaching *</label>
+            <select id="inq_coaching" name="coaching" class="form-control" required>
+              <option value="" disabled selected>Select Coaching Program</option>
+              <option value="IELTS Coaching">IELTS Coaching (Academic / General)</option>
+              <option value="TOEFL iBT">TOEFL iBT Preparation</option>
+              <option value="Spoken English">Spoken English &amp; Fluency</option>
+              <option value="German Language">German Language (A1–B2)</option>
+              <option value="French Language">French Language (A1–B2)</option>
+              <option value="Cambridge English / BEC">Cambridge English &amp; BEC</option>
+              <option value="PTE Academic">PTE Academic</option>
+              <option value="GRE / GMAT">GRE / GMAT Preparation</option>
+              <option value="Other Coaching">Other / General Counseling</option>
             </select>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="inq_country">Target Country</label>
-            <select id="inq_country" class="form-control">
-              <option value="usa">United States (USA)</option>
-              <option value="uk">United Kingdom (UK)</option>
-              <option value="canada">Canada</option>
-              <option value="australia">Australia</option>
-              <option value="germany">Germany / Europe</option>
-              <option value="new_zealand">New Zealand</option>
-              <option value="singapore">Singapore</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label class="form-label" for="inq_branch">Preferred Center</label>
-            <select id="inq_branch" class="form-control">
-              <option value="satellite">Satellite Head Office (Ahmedabad)</option>
-              <option value="navrangpura">Navrangpura Center</option>
-              <option value="maninagar">Maninagar Center</option>
-              <option value="nikol">Nikol Center</option>
-              <option value="vadodara">Vadodara Center</option>
-              <option value="surat">Surat Center</option>
-            </select>
+            <span class="form-error">Please select a coaching program.</span>
           </div>
 
           <div class="form-group form-group--full">
             <label class="form-label" for="inq_msg">Specific Requirements / Message</label>
-            <textarea id="inq_msg" class="form-control" placeholder="Mention your current education, work experience or target intake..."></textarea>
+            <textarea id="inq_msg" name="message" class="form-control" placeholder="Mention your current education, target score, or preferred batch timings..."></textarea>
           </div>
 
           <div class="form-group form-group--full">
             <button type="submit" class="btn btn-primary btn-full">
               Submit Inquiry &amp; Request Callback <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
             </button>
+            <div class="form-status" style="display: none; margin-top: 12px; padding: 12px; border-radius: var(--radius-md); font-size: 14px; text-align: center;"></div>
             <p class="body-small" style="text-align: center; margin-top: 8px; font-size: 12px;">
               🔒 We respect your privacy. Your information is 100% confidential.
             </p>
